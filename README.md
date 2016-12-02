@@ -3,6 +3,6 @@
 </h1>
 Link apk: https://drive.google.com/open?id=0ByerCvTQIVPNNzJmMzkxLXlWc28
 Zrzut ekranu:</br>
-![Alt text](https://lh5.googleusercontent.com/b8dtrwabm9Y1sUJkrcxH3QRGUXL2mVe6Yxr49jdg6g54Z7TMW7wfgWptfQMt995VIf6huEkjM5f3gt0=w1920-h860-rw "Optional title")
-![Alt text](https://lh3.googleusercontent.com/TJMWqZEQ_m2wAcY6DVsAjSIsZxT3vvoqapPFrPDpfQVfrPV4mv4MfSnrGudLEi5qIxND0eRXJBlSgUY=w1920-h860-rw "Optional title")
-
+https://drive.google.com/open?id=0ByerCvTQIVPNRE5Jb3dIb21YWDA
+</br>
+https://drive.google.com/open?id=0ByerCvTQIVPNZWJVY21LWmRheEk
