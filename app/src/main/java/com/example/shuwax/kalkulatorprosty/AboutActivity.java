@@ -1,5 +1,6 @@
 package com.example.shuwax.kalkulatorprosty;
 
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -12,6 +13,7 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Make to run your application only in portrait mode
         setTitle("Author");
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null){

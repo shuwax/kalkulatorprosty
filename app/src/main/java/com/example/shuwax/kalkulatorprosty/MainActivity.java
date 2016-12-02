@@ -1,5 +1,6 @@
 package com.example.shuwax.kalkulatorprosty;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
         SetTextView();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Make to run your application only in portrait mode
         textView.setText("0");
         textView2.setText("");
         //Emable scroll textView
@@ -195,11 +197,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnClickActionNegative(View view) {
-        getVibe();
+
         SetTextView();
         BigDecimal liczba = BigDecimal.ZERO;
         String text = textView.getText().toString();
         if(!nowVar) {
+            getVibe();
             if (!text.equals("0")) {
                 if (!firstVar) {
                     firstDig = new BigDecimal(text);
@@ -217,12 +220,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnClickActionSqrt(View view) {
-        getVibe();
+
         SetTextView();
         String text = textView.getText().toString();
         BigDecimal liczba = new BigDecimal(text);
 
         if(!nowVar) {
+            getVibe();
             if (liczba.doubleValue() >= 0) {
                 if (!firstVar) {
                     firstDig = new BigDecimal(Math.sqrt(liczba.doubleValue()));
@@ -237,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void OnClickActionDot(View view) {
-        getVibe();
+
         SetTextView();
         boolean dot = false; // to flag if "." is allready placed
         String text = textView.getText().toString();
@@ -248,6 +252,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             if (!dot) {
+                getVibe();
                 text = text + ".";
                 textView.setText(text);
             }
@@ -255,10 +260,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnClickDel(View view) {
-        getVibe();
+
         SetTextView();
         String text = textView.getText().toString();
         if(!nowVar) {
+            getVibe();
             if (text.length() > 0) {
                 if (text.length() == 1) {
                     textView.setText("0");
